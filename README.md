@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a wall-following algorithm for a robot in the Webots simulation environment. The robot uses proximity sensors to detect walls and navigate through an environment by following walls on its left side.
+This project implements a wall-following algorithm for a robot in the Webots simulation environment. The robot uses proximity sensors to detect walls and navigate through an environment by following walls on its left side. A custom-built maze world is included for testing the robot's performance.
 
 The controller is written in Python and utilizes Webots' controller API to interact with the simulated robot and its sensors.
 
@@ -12,6 +12,7 @@ The controller is written in Python and utilizes Webots' controller API to inter
 - Obstacle avoidance
 - Utilizes 8 proximity sensors for environment detection
 - Implements differential drive control
+- Custom maze world for testing and demonstration
 
 ## Requirements
 
@@ -22,7 +23,7 @@ The controller is written in Python and utilizes Webots' controller API to inter
 
 1. Clone this repository to your local machine.
 2. Open the Webots simulator.
-3. Load the world file for this project (not provided in this repository).
+3. Load the custom maze world file provided in this project.
 4. Ensure the robot controller is set to `wall_follower_controller.py`.
 
 ## How it works
@@ -48,6 +49,4 @@ You can modify the following parameters in the `wall_follower_controller.py` fil
 - Sensor threshold values (currently set at 80)
 - Motor speed ratios for different behaviors
 
-## Contributing
-
-Contributions to improve the wall-following algorithm or extend the functionality are welcome. Please fork the repository and submit a pull request with your changes.
+You can also modify the maze world to create different testing scenarios for the robot.
